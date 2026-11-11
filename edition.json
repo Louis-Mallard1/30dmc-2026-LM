@@ -1,0 +1,15 @@
+{
+  "annee": 2026,
+  "titre": "Trente cartes de Rochefort",
+  "titre_court": "30 cartes de Rochefort",
+  "sous_titre": "Une carte par jour de novembre, sur un thème imposé.",
+  "accroche": "Trente thèmes imposés, un seul territoire : Rochefort. Et pour chaque carte, un seul prompt : je donne l'idée, Claude réalise la carte dans QGIS, de la recherche des données à l'export, sans que je touche au logiciel.",
+  "auteur": "Louis MALLARD",
+  "defi_url": "https://30daymapchallenge.com/",
+  "racine_projet": "..",
+  "suivi": "../suivi.csv",
+  "themes": "../00_charte/themes_2026.md",
+  "calque": "src/calque/calque.svg",
+  "licence_cartes": "Carte sous licence CC BY 4.0 : libre réutilisation en citant « Louis MALLARD, #30DayMapChallenge 2026 ». Les données sources gardent leur propre licence, indiquée ci-dessus.",
+  "url_publique": ""
+}

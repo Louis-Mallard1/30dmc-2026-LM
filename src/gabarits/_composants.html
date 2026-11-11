@@ -1,0 +1,54 @@
+{#- Composants réutilisables : barre d'échelle, séparateur « méandre ». -#}
+
+{#- Barre d'échelle graphique : un segment par jour. Livrés en Lampe, à venir
+    alternativement Calque et vide, comme une échelle cartographique. -#}
+{% macro echelle(nb, total, compacte=false) %}
+<div class="echelle{% if compacte %} echelle--compacte{% endif %}">
+  <div class="echelle-regle" aria-hidden="true">
+    <div class="echelle-barre" style="--segments: {{ total }}">
+      {%- for i in range(total) -%}
+      <span class="{% if i < nb %}livre{% elif i % 2 == 0 %}plein{% else %}vide{% endif %}"></span>
+      {%- endfor -%}
+    </div>
+    <div class="echelle-graduations">
+      {%- for g in range(0, total + 1, 10) -%}
+      <span style="--position: {{ g / total }}">{{ g }}</span>
+      {%- endfor -%}
+    </div>
+  </div>
+  <p class="echelle-legende">{{ nb|cartes }} sur {{ total }}</p>
+</div>
+{% endmacro %}
+
+{#- Miniature d'une carte livrée (480 et 960 px de large). Le texte qui
+    l'accompagne dans le lien la décrit déjà : l'image est donc muette. -#}
+{% macro miniature(carte, racine, tailles, prioritaire=false) %}
+<img src="{{ racine }}{{ carte.images['480'].chemin }}"
+  srcset="{{ racine }}{{ carte.images['480'].chemin }} 480w, {{ racine }}{{ carte.images['960'].chemin }} 960w"
+  sizes="{{ tailles }}" width="480" height="600" alt=""
+  {% if prioritaire %}fetchpriority="high"{% else %}loading="lazy"{% endif %} decoding="async">
+{%- endmacro %}
+
+{#- Bandeau des pages intérieures : discret. -#}
+{% macro bandeau(edition, racine, page) %}
+<header class="bandeau">
+  <a class="bandeau-titre" href="{{ racine }}">{{ edition.titre_court|default(edition.titre) }}</a>
+  <nav class="bandeau-nav" aria-label="Navigation principale">
+    <a href="{{ racine }}atlas/"{% if page == "atlas" %} aria-current="page"{% endif %}>Atlas</a>
+    <a href="{{ racine }}a-propos/"{% if page == "a-propos" %} aria-current="page"{% endif %}>À propos</a>
+  </nav>
+</header>
+{%- endmacro %}
+
+{#- Séparateur : un tronçon réel de la Charente, à sa vraie proportion,
+    prolongé par un filet. Purement décoratif. -#}
+{% macro meandre(axe) %}
+{% if axe %}
+<div class="meandre" aria-hidden="true" style="--fin: {{ axe.fin }}; --rapport: {{ axe.rapport }}">
+  <svg class="meandre-trace" viewBox="{{ axe.viewbox }}" preserveAspectRatio="none" focusable="false"><path d="{{ axe.d }}"/></svg>
+  <span class="meandre-filet"></span>
+</div>
+{% else %}
+<hr class="filet">
+{% endif %}
+{% endmacro %}

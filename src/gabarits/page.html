@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{#- Pages de texte tirées de contenu/*.md (À propos, mentions légales).
+    Le titre de niveau 1 vient du fichier Markdown lui-même. -#}
+
+{% block titre %}{{ titre_page }}, {{ edition.titre }}{% endblock %}
+
+{% block entete %}{{ c.bandeau(edition, racine, page) }}{% endblock %}
+
+{% block contenu %}
+<article class="prose">
+{{ contenu|safe }}
+</article>
+{% endblock %}

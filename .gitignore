@@ -1,0 +1,17 @@
+# Environnement Python local (recréé par construire_site.bat)
+.venv/
+__pycache__/
+*.pyc
+
+# Captures d'écran et rapports de relecture : outils de travail, pas le site
+captures/
+
+# Documents de travail : gardés sur l'ordinateur, hors du dépôt public
+CAHIER_DES_CHARGES.md
+CLAUDE.md
+PROMPT_DEMARRAGE.md
+
+# Fichiers système
+Thumbs.db
+Desktop.ini
+.DS_Store

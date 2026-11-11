@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>À propos, Trente cartes de Rochefort</title>
+<meta name="description" content="Une carte par jour de novembre, sur un thème imposé.">
+<meta name="author" content="Louis MALLARD">
+<meta name="theme-color" content="#0F1E22">
+<meta name="color-scheme" content="dark">
+<link rel="preload" href="../polices/archivo-variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../css/site.css"><link rel="icon" href="../favicon.svg" type="image/svg+xml">
+</head>
+<body class="page-a-propos">
+<a class="evitement" href="#contenu">Aller au contenu</a>
+<header class="bandeau">
+  <a class="bandeau-titre" href="../">30 cartes de Rochefort</a>
+  <nav class="bandeau-nav" aria-label="Navigation principale">
+    <a href="../atlas/">Atlas</a>
+    <a href="../a-propos/" aria-current="page">À propos</a>
+  </nav>
+</header><main id="contenu" tabindex="-1">
+<article class="prose">
+<h1>À propos</h1>
+<h2>Le défi</h2>
+<p>Le #30DayMapChallenge est un défi cartographique ouvert à tous : une carte par jour pendant tout le mois de novembre, chaque jour sur un thème imposé. Les thèmes et les règles sont publiés sur le <a href="https://30daymapchallenge.com/">site officiel du défi</a>. J&rsquo;aime me complexifier la vie, donc j&rsquo;ai ajouté deux contraintes supplémentaires : un seul territoire pour les trente cartes, et un seul prompt par carte.</p>
+<h2>Rochefort</h2>
+<p>Les trente cartes de cette série portent toutes sur Rochefort, en Charente-Maritime. Pourquoi Rochefort ? Pourquoi pas ? Voilà, vous avez votre réponse.</p>
+<h2>Une carte, un prompt</h2>
+<p>Chaque carte de la série est née d&rsquo;un seul prompt. Je donne le jour, le thème et mon idée ; je ne touche jamais à QGIS. Tout le reste est réalisé par Claude (abonnement payant), connecté à QGIS par le protocole MCP : recherche des données, traitements, mise en page, export.</p>
+<p>Pour que cela tienne sur trente jours, j&rsquo;ai construit une méthode de travail :</p>
+<ul>
+<li><strong>Un skill</strong>, sorte de mode d&rsquo;emploi que Claude suit à chaque carte : les étapes, les règles à respecter et les outils à utiliser, toujours dans le même ordre.</li>
+<li><strong>Une boîte à outils commune</strong> : un gabarit de mise en page au format 4:5, un cache de données ouvertes sur Rochefort (IGN, Insee, OpenStreetMap), une charte graphique, des scripts d&rsquo;export et de contrôle automatique.</li>
+<li><strong>Trois agents spécialisés</strong>, qui se passent le relais :</li>
+<li>l&rsquo;<strong>Éclaireur</strong> cherche et télécharge les données qui manquent, puis consigne leur source et leur licence ;</li>
+<li>l&rsquo;<strong>Exécuteur</strong> construit la carte dans QGIS, de la symbologie à l&rsquo;export ;</li>
+<li>le <strong>Vérificateur</strong>, qui n&rsquo;a pas vu la carte se construire, la juge à froid sur une grille de contrôle : titre, légende, orientation, échelle, sources, lisibilité.</li>
+<li><strong>Deux allers-retours au maximum</strong> entre l&rsquo;Exécuteur et le Vérificateur, puis la carte est livrée.</li>
+</ul>
+<p>Une fois la carte validée, elle rejoint ce site sans intervention manuelle de ma part. Chaque livraison est consignée dans un fichier de suivi : titre, thème, sources. À partir de ce fichier, une seule commande régénère le site : les images sont optimisées pour le web, la carte prend sa place dans l&rsquo;atlas des 30 jours, une fiche est créée avec ses sources et ses téléchargements en haute définition, puis le site est publié en ligne. Ce site a lui aussi été conçu avec Claude, dans Claude Code, à partir d&rsquo;un cahier des charges que j&rsquo;ai rédigé avec lui.</p>
+<p>Ce projet me permet d&rsquo;approfondir mes connaissances et de comprendre concrètement le fonctionnement des IA : skills, agents, prompts, connecteurs… L&rsquo;idée de chaque carte reste la mienne. Je m&rsquo;autorise une reprise uniquement en cas de bug graphique (superposition de textes, de formes, etc.).</p>
+<h2>Piloté par l&rsquo;IA, contrôlé par l&rsquo;humain</h2>
+<p>Du calcul des coordonnées géographiques aux géotraitements avancés sous QGIS, chaque avancée technique a réduit le temps nécessaire pour produire une carte fiable. L&rsquo;arrivée de l&rsquo;IA générative dans l&rsquo;écosystème SIG accélère encore ce processus en assistant directement la préparation des données et l&rsquo;analyse spatiale.</p>
+<p>Face à des modèles capables de générer des scripts et des analyses spatiales à la volée, une question pratique se pose : l&rsquo;IA va-t-elle remplacer le travail cartographique, ou simplement redéfinir le rôle de l&rsquo;analyste SIG ?</p>
+<p><a href="../atlas/">Voir les 30 jours</a></p>
+</article>
+</main>
+<footer class="pied">
+  <p class="pied-auteur">© 2026 Louis MALLARD</p>
+  <p class="pied-sources">Les sources et licences des données figurent sur chaque carte.</p>
+  <p class="pied-liens">
+    <a href="../mentions-legales/">Mentions légales</a>
+    <a href="https://30daymapchallenge.com/">Site officiel du #30DayMapChallenge</a>
+  </p>
+</footer>
+<a class="nord" href="#contenu" aria-label="Revenir en haut" data-nord>
+  <svg viewBox="0 0 24 36" width="24" height="36" aria-hidden="true" focusable="false">
+    <text x="12" y="9" text-anchor="middle">N</text>
+    <path class="nord-ombre" d="M12 12 L12 30.5 L6.5 34 Z"/>
+    <path class="nord-jour" d="M12 12 L17.5 34 L12 30.5 Z"/>
+  </svg>
+</a>
+<script type="module" src="../js/commun.js"></script>
+</body>
+</html>

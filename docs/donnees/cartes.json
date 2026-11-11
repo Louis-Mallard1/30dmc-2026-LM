@@ -1,0 +1,513 @@
+{
+  "annee": 2026,
+  "titre": "Trente cartes de Rochefort",
+  "nb_livrees": 6,
+  "nb_jours": 30,
+  "cartes": [
+    {
+      "jour": "01",
+      "theme": "Points",
+      "consigne": "Une carte faite de points",
+      "slug": "01-points",
+      "etat": "livree",
+      "titre": "Où vivent les Rochefortais ?",
+      "sources": [
+        "Insee – Filosofi 2021, données carroyées à 200 m (Licence Ouverte Etalab 2.0)",
+        "Insee – RP2023, population municipale (Licence Ouverte Etalab 2.0)",
+        "© IGN – BD TOPO®, ADMIN EXPRESS COG – Licence Ouverte Etalab 2.0",
+        "Géoplateforme, données extraites le 08/11/2026"
+      ],
+      "date": "2026-11-08",
+      "page": "carte/01-points/",
+      "images": {
+        "480": {
+          "chemin": "img/01-points_480.webp",
+          "largeur": 480,
+          "hauteur": 600
+        },
+        "960": {
+          "chemin": "img/01-points_960.webp",
+          "largeur": 960,
+          "hauteur": 1200
+        },
+        "1350": {
+          "chemin": "img/01-points_1350.webp",
+          "largeur": 1080,
+          "hauteur": 1350
+        },
+        "hd": {
+          "chemin": "img/01-points_hd.webp",
+          "largeur": 4320,
+          "hauteur": 5400
+        },
+        "partage": {
+          "chemin": "img/01-points_partage.jpg",
+          "largeur": 1200,
+          "hauteur": 630
+        }
+      },
+      "telechargements": {
+        "hd": {
+          "chemin": "telechargements/01-points_HD.png",
+          "octets": 1437327,
+          "format": "PNG",
+          "nom": "30DMC2026_01_Points_Louis-MALLARD.png"
+        },
+        "pdf": {
+          "chemin": "telechargements/01-points.pdf",
+          "octets": 863007,
+          "format": "PDF",
+          "nom": "30DMC2026_01_Points_Louis-MALLARD.pdf"
+        }
+      }
+    },
+    {
+      "jour": "02",
+      "theme": "Lines",
+      "consigne": "Une carte faite de lignes",
+      "slug": "02-lines",
+      "etat": "livree",
+      "titre": "Rochefort à vol d'oiseau... ou d'avion",
+      "sources": [
+        "Natural Earth (domaine public)",
+        "Mairies : Wikidata (CC0), © contributeurs OpenStreetMap (ODbL), extraction du 09/11/2026"
+      ],
+      "date": "2026-11-09",
+      "page": "carte/02-lines/",
+      "images": {
+        "480": {
+          "chemin": "img/02-lines_480.webp",
+          "largeur": 480,
+          "hauteur": 600
+        },
+        "960": {
+          "chemin": "img/02-lines_960.webp",
+          "largeur": 960,
+          "hauteur": 1200
+        },
+        "1350": {
+          "chemin": "img/02-lines_1350.webp",
+          "largeur": 1080,
+          "hauteur": 1350
+        },
+        "hd": {
+          "chemin": "img/02-lines_hd.webp",
+          "largeur": 4320,
+          "hauteur": 5400
+        },
+        "partage": {
+          "chemin": "img/02-lines_partage.jpg",
+          "largeur": 1200,
+          "hauteur": 630
+        }
+      },
+      "telechargements": {
+        "hd": {
+          "chemin": "telechargements/02-lines_HD.png",
+          "octets": 2260960,
+          "format": "PNG",
+          "nom": "30DMC2026_02_Lines_Louis-MALLARD.png"
+        },
+        "pdf": {
+          "chemin": "telechargements/02-lines.pdf",
+          "octets": 1704529,
+          "format": "PDF",
+          "nom": "30DMC2026_02_Lines_Louis-MALLARD.pdf"
+        }
+      }
+    },
+    {
+      "jour": "03",
+      "theme": "Polygons",
+      "consigne": "Une carte faite de polygones",
+      "slug": "03-polygons",
+      "etat": "livree",
+      "titre": "Rochefort, les pieds dans le marais",
+      "sources": [
+        "© contributeurs OpenStreetMap (ODbL), extraction du 09/11/2026",
+        "© IGN – BD TOPO®, ADMIN EXPRESS COG – Licence Ouverte Etalab 2.0",
+        "Géoplateforme, données extraites le 08/11/2026"
+      ],
+      "date": "2026-11-09",
+      "page": "carte/03-polygons/",
+      "images": {
+        "480": {
+          "chemin": "img/03-polygons_480.webp",
+          "largeur": 480,
+          "hauteur": 600
+        },
+        "960": {
+          "chemin": "img/03-polygons_960.webp",
+          "largeur": 960,
+          "hauteur": 1200
+        },
+        "1350": {
+          "chemin": "img/03-polygons_1350.webp",
+          "largeur": 1080,
+          "hauteur": 1350
+        },
+        "hd": {
+          "chemin": "img/03-polygons_hd.webp",
+          "largeur": 4320,
+          "hauteur": 5400
+        },
+        "partage": {
+          "chemin": "img/03-polygons_partage.jpg",
+          "largeur": 1200,
+          "hauteur": 630
+        }
+      },
+      "telechargements": {
+        "hd": {
+          "chemin": "telechargements/03-polygons_HD.png",
+          "octets": 1607623,
+          "format": "PNG",
+          "nom": "30DMC2026_03_Polygons_Louis-MALLARD.png"
+        },
+        "pdf": {
+          "chemin": "telechargements/03-polygons.pdf",
+          "octets": 953636,
+          "format": "PDF",
+          "nom": "30DMC2026_03_Polygons_Louis-MALLARD.pdf"
+        }
+      }
+    },
+    {
+      "jour": "04",
+      "theme": "Clusters",
+      "consigne": "Regroupements, points chauds, ce qui se rassemble",
+      "slug": "04-clusters",
+      "etat": "livree",
+      "titre": "Rochefort, l'économie en grappes",
+      "sources": [
+        "INSEE, base Sirene des entreprises et établissements (géolocalisation INSEE), Licence Ouverte 2.0, extraction 01/11/2026",
+        "© contributeurs OpenStreetMap (ODbL)",
+        "© IGN – BD TOPO®, ADMIN EXPRESS COG – Licence Ouverte Etalab 2.0",
+        "Géoplateforme, données extraites le 08/11/2026"
+      ],
+      "date": "2026-11-09",
+      "page": "carte/04-clusters/",
+      "images": {
+        "480": {
+          "chemin": "img/04-clusters_480.webp",
+          "largeur": 480,
+          "hauteur": 600
+        },
+        "960": {
+          "chemin": "img/04-clusters_960.webp",
+          "largeur": 960,
+          "hauteur": 1200
+        },
+        "1350": {
+          "chemin": "img/04-clusters_1350.webp",
+          "largeur": 1080,
+          "hauteur": 1350
+        },
+        "hd": {
+          "chemin": "img/04-clusters_hd.webp",
+          "largeur": 4320,
+          "hauteur": 5400
+        },
+        "partage": {
+          "chemin": "img/04-clusters_partage.jpg",
+          "largeur": 1200,
+          "hauteur": 630
+        }
+      },
+      "telechargements": {
+        "hd": {
+          "chemin": "telechargements/04-clusters_HD.png",
+          "octets": 4312533,
+          "format": "PNG",
+          "nom": "30DMC2026_04_Clusters_Louis-MALLARD.png"
+        },
+        "pdf": {
+          "chemin": "telechargements/04-clusters.pdf",
+          "octets": 2733074,
+          "format": "PDF",
+          "nom": "30DMC2026_04_Clusters_Louis-MALLARD.pdf"
+        }
+      }
+    },
+    {
+      "jour": "05",
+      "theme": "Senses: Sight",
+      "consigne": "Ce qui se voit, par exemple un bassin visuel",
+      "slug": "05-sight",
+      "etat": "livree",
+      "titre": "Vue imprenable depuis le haut-pital",
+      "sources": [
+        "© IGN – LiDAR HD MNS, RGE ALTI – Licence Ouverte Etalab 2.0",
+        "© IGN – BD TOPO®, ADMIN EXPRESS COG – Licence Ouverte Etalab 2.0",
+        "Géoplateforme, données extraites le 08/11/2026 et le 10/11/2026",
+        "© contributeurs OpenStreetMap (ODbL)"
+      ],
+      "date": "2026-11-10",
+      "page": "carte/05-sight/",
+      "images": {
+        "480": {
+          "chemin": "img/05-sight_480.webp",
+          "largeur": 480,
+          "hauteur": 600
+        },
+        "960": {
+          "chemin": "img/05-sight_960.webp",
+          "largeur": 960,
+          "hauteur": 1200
+        },
+        "1350": {
+          "chemin": "img/05-sight_1350.webp",
+          "largeur": 1080,
+          "hauteur": 1350
+        },
+        "hd": {
+          "chemin": "img/05-sight_hd.webp",
+          "largeur": 4320,
+          "hauteur": 5400
+        },
+        "partage": {
+          "chemin": "img/05-sight_partage.jpg",
+          "largeur": 1200,
+          "hauteur": 630
+        }
+      },
+      "telechargements": {
+        "hd": {
+          "chemin": "telechargements/05-sight_HD.png",
+          "octets": 11833762,
+          "format": "PNG",
+          "nom": "30DMC2026_05_Senses-Sight_Louis-MALLARD.png"
+        },
+        "pdf": {
+          "chemin": "telechargements/05-sight.pdf",
+          "octets": 1995820,
+          "format": "PDF",
+          "nom": "30DMC2026_05_Senses-Sight_Louis-MALLARD.pdf"
+        }
+      }
+    },
+    {
+      "jour": "06",
+      "theme": "Vintage",
+      "consigne": "Une carte d'allure ancienne, ou un sujet ancien",
+      "slug": "06-vintage",
+      "etat": "livree",
+      "titre": "Rochefort en 1850",
+      "sources": [
+        "© contributeurs OpenStreetMap (ODbL), données extraites le 11/10/2026",
+        "Restitution des fortifications : Louis MALLARD, d'après plans anciens"
+      ],
+      "date": "2026-11-10",
+      "page": "carte/06-vintage/",
+      "images": {
+        "480": {
+          "chemin": "img/06-vintage_480.webp",
+          "largeur": 480,
+          "hauteur": 600
+        },
+        "960": {
+          "chemin": "img/06-vintage_960.webp",
+          "largeur": 960,
+          "hauteur": 1200
+        },
+        "1350": {
+          "chemin": "img/06-vintage_1350.webp",
+          "largeur": 1080,
+          "hauteur": 1350
+        },
+        "hd": {
+          "chemin": "img/06-vintage_hd.webp",
+          "largeur": 4320,
+          "hauteur": 5400
+        },
+        "partage": {
+          "chemin": "img/06-vintage_partage.jpg",
+          "largeur": 1200,
+          "hauteur": 630
+        }
+      },
+      "telechargements": {
+        "hd": {
+          "chemin": "telechargements/06-vintage_HD.png",
+          "octets": 24045501,
+          "format": "PNG",
+          "nom": "30DMC2026_06_Vintage_Louis-MALLARD.png"
+        },
+        "pdf": {
+          "chemin": "telechargements/06-vintage.pdf",
+          "octets": 8524006,
+          "format": "PDF",
+          "nom": "30DMC2026_06_Vintage_Louis-MALLARD.pdf"
+        }
+      }
+    },
+    {
+      "jour": "07",
+      "theme": "10 minute map",
+      "consigne": "Une carte faite en 10 minutes maximum",
+      "slug": "07-10-minute",
+      "etat": "a_venir"
+    },
+    {
+      "jour": "08",
+      "theme": "Utopia",
+      "consigne": "Quelque chose qui pourrait exister",
+      "slug": "08-utopia",
+      "etat": "a_venir"
+    },
+    {
+      "jour": "09",
+      "theme": "Urban-rural",
+      "consigne": "Ville et campagne",
+      "slug": "09-urban-rural",
+      "etat": "a_venir"
+    },
+    {
+      "jour": "10",
+      "theme": "Prompting only",
+      "consigne": "Une carte faite uniquement par une IA ou en ligne de commande",
+      "slug": "10-prompting",
+      "etat": "a_venir"
+    },
+    {
+      "jour": "11",
+      "theme": "Senses: Sound",
+      "consigne": "Un paysage sonore ou du bruit",
+      "slug": "11-sound",
+      "etat": "a_venir"
+    },
+    {
+      "jour": "12",
+      "theme": "Power",
+      "consigne": "Le pouvoir au sens large : énergie, réseaux, force, influence",
+      "slug": "12-power",
+      "etat": "a_venir"
+    },
+    {
+      "jour": "13",
+      "theme": "Interactions",
+      "consigne": "Des interactions, éventuellement une carte interactive",
+      "slug": "13-interactions",
+      "etat": "a_venir"
+    },
+    {
+      "jour": "14",
+      "theme": "Borgesian map",
+      "consigne": "Une carte si détaillée qu'elle devient le territoire",
+      "slug": "14-borgesian",
+      "etat": "a_venir"
+    },
+    {
+      "jour": "15",
+      "theme": "Inside out",
+      "consigne": "Quelque chose de volontairement faux ou retourné",
+      "slug": "15-inside-out",
+      "etat": "a_venir"
+    },
+    {
+      "jour": "16",
+      "theme": "Collaborative map",
+      "consigne": "Une carte faite à plusieurs",
+      "slug": "16-collaborative",
+      "etat": "a_venir"
+    },
+    {
+      "jour": "17",
+      "theme": "Light & dark",
+      "consigne": "Seulement la lumière et l'ombre",
+      "slug": "17-light-dark",
+      "etat": "a_venir"
+    },
+    {
+      "jour": "18",
+      "theme": "NULL",
+      "consigne": "Pas de consigne",
+      "slug": "18-null",
+      "etat": "a_venir"
+    },
+    {
+      "jour": "19",
+      "theme": "Senses: Smell",
+      "consigne": "Ce qui se sent",
+      "slug": "19-smell",
+      "etat": "a_venir"
+    },
+    {
+      "jour": "20",
+      "theme": "Hexagons",
+      "consigne": "Des grilles hexagonales",
+      "slug": "20-hexagons",
+      "etat": "a_venir"
+    },
+    {
+      "jour": "21",
+      "theme": "OpenStreetMap",
+      "consigne": "Des données OSM, ou des contributions à OSM",
+      "slug": "21-openstreetmap",
+      "etat": "a_venir"
+    },
+    {
+      "jour": "22",
+      "theme": "Projections",
+      "consigne": "Mettre le globe à plat, choisir sa projection préférée",
+      "slug": "22-projections",
+      "etat": "a_venir"
+    },
+    {
+      "jour": "23",
+      "theme": "Senses: Taste",
+      "consigne": "Ce qui se goûte",
+      "slug": "23-taste",
+      "etat": "a_venir"
+    },
+    {
+      "jour": "24",
+      "theme": "Network",
+      "consigne": "Un réseau : itinéraires, transports, liens humains",
+      "slug": "24-network",
+      "etat": "a_venir"
+    },
+    {
+      "jour": "25",
+      "theme": "Is this a map?",
+      "consigne": "Entre carte et art",
+      "slug": "25-is-this-a-map",
+      "etat": "a_venir"
+    },
+    {
+      "jour": "26",
+      "theme": "Water",
+      "consigne": "L'eau",
+      "slug": "26-water",
+      "etat": "a_venir"
+    },
+    {
+      "jour": "27",
+      "theme": "New tool",
+      "consigne": "Un nouvel outil dans sa chaîne de production",
+      "slug": "27-new-tool",
+      "etat": "a_venir"
+    },
+    {
+      "jour": "28",
+      "theme": "Senses: Feeling",
+      "consigne": "Un sentiment abstrait",
+      "slug": "28-feeling",
+      "etat": "a_venir"
+    },
+    {
+      "jour": "29",
+      "theme": "Raster",
+      "consigne": "Quelque chose d'intéressant avec des pixels",
+      "slug": "29-raster",
+      "etat": "a_venir"
+    },
+    {
+      "jour": "30",
+      "theme": "Pen & paper",
+      "consigne": "Une carte analogique, faite à la main",
+      "slug": "30-pen-paper",
+      "etat": "a_venir"
+    }
+  ]
+}

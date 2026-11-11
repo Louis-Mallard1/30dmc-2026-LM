@@ -1,0 +1,11 @@
+# Les scripts Windows gardent leurs fins de ligne CRLF, sinon cmd.exe peut
+# mal lire les étiquettes « goto ».
+*.bat text eol=crlf
+
+# Fichiers binaires : jamais convertis
+*.png binary
+*.jpg binary
+*.webp binary
+*.pdf binary
+*.woff2 binary
+*.ttf binary

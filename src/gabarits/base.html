@@ -1,0 +1,46 @@
+{#- Gabarit commun à toutes les pages. `racine` mène à la racine du site
+    ("./", "../", "../../") : tous les chemins sont relatifs. -#}
+{% import "_composants.html" as c %}
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block titre %}{{ edition.titre }}, #30DayMapChallenge {{ edition.annee }}{% endblock %}</title>
+<meta name="description" content="{% block description %}{{ edition.sous_titre }}{% endblock %}">
+<meta name="author" content="{{ edition.auteur }}">
+<meta name="theme-color" content="#0F1E22">
+<meta name="color-scheme" content="dark">
+<link rel="preload" href="{{ racine }}polices/archivo-variable.woff2" as="font" type="font/woff2" crossorigin>
+{% block styles %}<link rel="stylesheet" href="{{ racine }}css/site.css">{% endblock %}
+<link rel="icon" href="{{ racine }}favicon.svg" type="image/svg+xml">
+{% block tete %}{% endblock %}
+</head>
+<body class="page-{{ page }}">
+<a class="evitement" href="#contenu">Aller au contenu</a>
+{% block entete %}{% endblock %}
+<main id="contenu" tabindex="-1">
+{% block contenu %}{% endblock %}
+</main>
+{% block pied %}
+<footer class="pied">
+  <p class="pied-auteur">© {{ edition.annee }} {{ edition.auteur }}</p>
+  <p class="pied-sources">Les sources et licences des données figurent sur chaque carte.</p>
+  <p class="pied-liens">
+    <a href="{{ racine }}mentions-legales/"{% if page == "mentions-legales" %} aria-current="page"{% endif %}>Mentions légales</a>
+    <a href="{{ edition.defi_url }}">Site officiel du #30DayMapChallenge</a>
+  </p>
+</footer>
+{% endblock %}
+{#- Flèche du nord : retour en haut de page, après un écran de défilement. -#}
+<a class="nord" href="#contenu" aria-label="Revenir en haut" data-nord>
+  <svg viewBox="0 0 24 36" width="24" height="36" aria-hidden="true" focusable="false">
+    <text x="12" y="9" text-anchor="middle">N</text>
+    <path class="nord-ombre" d="M12 12 L12 30.5 L6.5 34 Z"/>
+    <path class="nord-jour" d="M12 12 L17.5 34 L12 30.5 Z"/>
+  </svg>
+</a>
+<script type="module" src="{{ racine }}js/commun.js"></script>
+{% block scripts %}{% endblock %}
+</body>
+</html>

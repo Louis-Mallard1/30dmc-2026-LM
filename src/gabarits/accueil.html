@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+
+{% block tete %}
+{#- L'allumage de la table n'a lieu qu'une fois par session, et jamais si le
+    visiteur a demandé à réduire les animations. Ce script s'exécute avant
+    l'affichage pour éviter tout clignotement. -#}
+<script>
+try {
+  if (!matchMedia("(prefers-reduced-motion: reduce)").matches
+      && !sessionStorage.getItem("table-allumee")) {
+    document.documentElement.classList.add("allumage");
+    sessionStorage.setItem("table-allumee", "1");
+  }
+} catch (e) {}
+</script>
+{% endblock %}
+
+{% block contenu %}
+<section class="table" aria-labelledby="titre-accueil"
+  {% if calque %}data-emprise='{{ calque.emprise|tojson }}'{% endif %}>
+  {% if calque %}
+  <div class="calque" aria-hidden="true">
+    <svg class="calque-modele" width="0" height="0" focusable="false">
+      <defs>{{ calque.defs|safe }}<g id="plan">{{ calque.plan|safe }}</g></defs>
+    </svg>
+    <svg class="calque-sombre" viewBox="{{ calque.viewbox }}" preserveAspectRatio="xMidYMid slice" focusable="false"><use href="#plan"/></svg>
+    <svg class="calque-eclaire" viewBox="{{ calque.viewbox }}" preserveAspectRatio="xMidYMid slice" focusable="false"><use href="#plan"/></svg>
+    <div class="lampe"></div>
+  </div>
+  {% endif %}
+
+  <div class="table-texte">
+    <p class="surtitre">#30DayMapChallenge {{ edition.annee }}, par {{ edition.auteur }}</p>
+    <h1 id="titre-accueil">{{ edition.titre }}</h1>
+    <p class="soustitre">{{ edition.sous_titre }}</p>
+    {{ c.echelle(nb_livrees, nb_jours) }}
+    <a class="bouton" href="{{ racine }}atlas/">Voir les {{ nb_jours }} jours</a>
+  </div>
+
+  <p class="coordonnees" aria-hidden="true" data-coordonnees></p>
+</section>
+
+{{ c.meandre(calque.axe if calque else none) }}
+
+{% if livrees %}
+{#- Carrousel : la série des cartes livrées, de la plus récente à la plus
+    ancienne. Sans JavaScript (ou si le visiteur réduit les animations),
+    c'est une simple rangée qu'on fait défiler à la main. Le script la
+    duplique pour la faire défiler en boucle. -#}
+<section class="carrousel" aria-labelledby="titre-carrousel">
+  <h2 id="titre-carrousel" class="masque">Les cartes livrées, de la plus récente à la plus ancienne</h2>
+  <div class="carrousel-fenetre">
+    <div class="carrousel-piste">
+      <ul class="carrousel-serie" role="list">
+        {% for carte in livrees|reverse %}
+        <li>
+          <a class="carrousel-lien" href="{{ racine }}{{ carte.page }}">
+            <span class="feuille">{{ c.miniature(carte, racine, "(max-width: 759px) 208px, 288px", loop.first) }}</span>
+            <span class="legende"><span class="numero">#{{ carte.jour }}</span> <span class="legende-titre">{{ carte.titre }}</span></span>
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+  <button class="carrousel-pause" type="button" hidden>Pause</button>
+</section>
+
+{{ c.meandre(calque.axe if calque else none) }}
+{% endif %}
+
+{% if edition.get("accroche") %}
+<section class="accueil-apropos" aria-labelledby="titre-apropos">
+  <h2 id="titre-apropos" class="intertitre">À propos</h2>
+  <p>{{ edition.accroche }}</p>
+  <p><a href="{{ racine }}a-propos/">En savoir plus sur la série</a></p>
+</section>
+{% endif %}
+{% endblock %}
+
+{% block scripts %}
+<script type="module" src="{{ racine }}js/accueil.js"></script>
+{% endblock %}

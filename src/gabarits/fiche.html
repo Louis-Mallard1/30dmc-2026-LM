@@ -1,0 +1,116 @@
+{% extends "base.html" %}
+{%- set intitule = "#" ~ carte.jour ~ " " ~ carte.theme -%}
+{%- set alt = "Carte #" ~ carte.jour ~ ", " ~ carte.theme ~ " : " ~ carte.titre -%}
+{%- set url = edition.url_publique -%}
+
+{% block titre %}{{ intitule }}, {{ carte.titre }} – {{ edition.titre }}{% endblock %}
+{% block description %}Carte du #30DayMapChallenge {{ edition.annee }} par {{ edition.auteur }}{% endblock %}
+
+{% block tete %}
+{#- Balises de partage. Les adresses absolues n'existent que si l'adresse
+    publique du site est renseignée dans edition.json. -#}
+<meta property="og:type" content="article">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="{{ intitule }}, {{ carte.titre }}">
+<meta property="og:description" content="Carte du #30DayMapChallenge {{ edition.annee }} par {{ edition.auteur }}">
+<meta name="twitter:card" content="summary_large_image">
+{% if url %}
+<meta property="og:url" content="{{ url }}/{{ carte.page }}">
+<link rel="canonical" href="{{ url }}/{{ carte.page }}">
+{% if carte.images.get('partage') %}
+<meta property="og:image" content="{{ url }}/{{ carte.images['partage'].chemin }}">
+<meta property="og:image:width" content="{{ carte.images['partage'].largeur }}">
+<meta property="og:image:height" content="{{ carte.images['partage'].hauteur }}">
+<meta property="og:image:alt" content="{{ alt }}">
+{% endif %}
+{% endif %}
+{% endblock %}
+
+{% block entete %}{{ c.bandeau(edition, racine, page) }}{% endblock %}
+
+{% block contenu %}
+<article class="fiche">
+  <div class="fiche-planche">
+    {#- Sans JavaScript, le lien ouvre l'image HD ; avec, il ouvre la vue zoom. -#}
+    <a class="fiche-carte" href="{{ racine }}{{ (carte.images.get('hd') or carte.images['1350']).chemin }}"
+       data-zoom-hd="{{ racine }}{{ (carte.images.get('hd') or carte.images['1350']).chemin }}"
+       aria-label="Agrandir la carte">
+      <span class="feuille">
+        <img src="{{ racine }}{{ carte.images['1350'].chemin }}"
+          srcset="{{ racine }}{{ carte.images['960'].chemin }} 960w, {{ racine }}{{ carte.images['1350'].chemin }} 1080w"
+          sizes="(max-width: 759px) 100vw, min(calc((100vh - 9rem) * 0.8), 60vw)"
+          width="1080" height="1350" alt="{{ alt }}" fetchpriority="high">
+      </span>
+    </a>
+  </div>
+
+  <div class="fiche-infos">
+    <p class="fiche-numero numero">#{{ carte.jour }}</p>
+    <p class="fiche-theme">{{ carte.theme }}</p>
+    <h1 class="fiche-titre">{{ carte.titre }}</h1>
+
+    <section class="fiche-sources" aria-labelledby="titre-sources">
+      <h2 id="titre-sources" class="fiche-intertitre">Sources</h2>
+      {% if carte.sources %}
+      <ul>
+        {% for source in carte.sources %}<li>{{ source }}</li>{% endfor %}
+      </ul>
+      {% else %}
+      <p>Sources indiquées sur la carte.</p>
+      {% endif %}
+    </section>
+
+    {% if carte.telechargements %}
+    <section class="fiche-telechargements" aria-label="Téléchargements">
+      {% if carte.telechargements.get('hd') %}
+      {% set t = carte.telechargements['hd'] %}
+      <div class="telechargement">
+        <a class="bouton" href="{{ racine }}{{ t.chemin }}" download="{{ t.nom }}">Télécharger en HD</a>
+        <p class="telechargement-poids chiffres">{{ t.format }}, {{ t.octets|taille }}</p>
+      </div>
+      {% endif %}
+      {% if carte.telechargements.get('pdf') %}
+      {% set t = carte.telechargements['pdf'] %}
+      <div class="telechargement">
+        <a class="bouton {% if carte.telechargements.get('hd') %}bouton--secondaire{% endif %}" href="{{ racine }}{{ t.chemin }}" download="{{ t.nom }}">Télécharger le PDF</a>
+        <p class="telechargement-poids chiffres">{{ t.format }}, {{ t.octets|taille }}</p>
+      </div>
+      {% endif %}
+      {% if edition.get('licence_cartes') %}<p class="fiche-licence">{{ edition.licence_cartes }}</p>{% endif %}
+    </section>
+    {% endif %}
+  </div>
+</article>
+
+<nav class="feuilletage" aria-label="Feuilles voisines">
+  {% if precedente %}
+  <a class="feuilletage-precedente" href="{{ racine }}{{ precedente.page }}" rel="prev" data-touche="ArrowLeft">
+    <span class="feuilletage-sens">Feuille précédente</span>
+    <span class="feuilletage-cible"><span class="numero">#{{ precedente.jour }}</span> {{ precedente.theme }}</span>
+  </a>
+  {% else %}<span class="feuilletage-vide"></span>{% endif %}
+  <a class="feuilletage-atlas" href="{{ racine }}atlas/">Retour à l’atlas</a>
+  {% if suivante %}
+  <a class="feuilletage-suivante" href="{{ racine }}{{ suivante.page }}" rel="next" data-touche="ArrowRight">
+    <span class="feuilletage-sens">Feuille suivante</span>
+    <span class="feuilletage-cible"><span class="numero">#{{ suivante.jour }}</span> {{ suivante.theme }}</span>
+  </a>
+  {% else %}<span class="feuilletage-vide"></span>{% endif %}
+</nav>
+
+{#- Vue zoom : plein cadre sur fond Charente de nuit. -#}
+<dialog class="zoom" aria-label="{{ alt }}">
+  <div class="zoom-scene">
+    <img class="zoom-image" alt="{{ alt }}" draggable="false">
+  </div>
+  <div class="zoom-commandes">
+    <button type="button" data-zoom="plus" aria-label="Zoomer">+</button>
+    <button type="button" data-zoom="moins" aria-label="Dézoomer">−</button>
+    <button type="button" data-zoom="fermer" class="zoom-fermer" autofocus>Fermer</button>
+  </div>
+</dialog>
+{% endblock %}
+
+{% block scripts %}
+<script type="module" src="{{ racine }}js/fiche.js"></script>
+{% endblock %}

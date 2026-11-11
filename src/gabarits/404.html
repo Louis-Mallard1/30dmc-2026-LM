@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{#- Page 404 : autonome. Styles intégrés, liens absolus (voir construire.py). -#}
+
+{% block titre %}Cette feuille n’existe pas, {{ edition.titre }}{% endblock %}
+{% block styles %}<style>{{ css_en_ligne|safe }}</style>{% endblock %}
+{% block tete %}<meta name="robots" content="noindex">{% endblock %}
+
+{% block entete %}{{ c.bandeau(edition, racine, page) }}{% endblock %}
+
+{% block contenu %}
+<div class="introuvable">
+  <h1 class="titre-page">Cette feuille n’existe pas</h1>
+  <p>Elle n’a peut-être pas encore été tracée.</p>
+  <p><a class="bouton" href="{{ racine }}atlas/">Voir l’atlas</a></p>
+</div>
+{% endblock %}

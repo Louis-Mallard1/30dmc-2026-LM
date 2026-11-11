@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block titre %}Les {{ nb_jours }} jours, {{ edition.titre }}{% endblock %}
+{% block description %}Les {{ nb_jours }} jours du #30DayMapChallenge {{ edition.annee }} de {{ edition.auteur }} : {{ nb_livrees|cartes }} livrées sur {{ nb_jours }}.{% endblock %}
+
+{% block entete %}{{ c.bandeau(edition, racine, page) }}{% endblock %}
+
+{% block contenu %}
+<div class="atlas">
+  <div class="atlas-tete">
+    <h1 class="titre-page">Les {{ nb_jours }} jours</h1>
+    {{ c.echelle(nb_livrees, nb_jours, compacte=true) }}
+  </div>
+
+  <ol class="atlas-grille" role="list">
+    {% for carte in cartes %}
+    {% if carte.etat == "livree" %}
+    <li class="case case--livree" data-jour="{{ carte.jour }}">
+      <a class="case-lien" href="{{ racine }}{{ carte.page }}">
+        <span class="feuille">{{ c.miniature(carte, racine, "(min-width: 1100px) 15vw, (min-width: 760px) 22vw, (min-width: 520px) 30vw, 45vw", loop.index <= 2) }}</span>
+        <span class="case-texte">
+          <span class="case-ligne"><span class="numero">#{{ carte.jour }}</span> <span class="case-theme">{{ carte.theme }}</span></span>
+          <span class="case-titre">{{ carte.titre }}</span>
+        </span>
+      </a>
+    </li>
+    {% else %}
+    {#- Case à venir : pas un lien, et pas d'arrêt au clavier (choix de Louis,
+        pour ne pas imposer 24 tabulations). La consigne apparaît au survol ;
+        elle reste toujours lue par les lecteurs d'écran. -#}
+    <li class="case case--avenir" data-jour="{{ carte.jour }}">
+      <span class="emplacement">
+        <span class="hirondelle hg"></span><span class="hirondelle hd"></span>
+        <span class="hirondelle bg"></span><span class="hirondelle bd"></span>
+        <span class="emplacement-numero" aria-hidden="true">#{{ carte.jour }}</span>
+        <span class="emplacement-consigne">{{ carte.consigne }}</span>      </span>
+      <span class="case-texte">
+        <span class="case-ligne"><span class="masque">#{{ carte.jour }} </span><span class="case-theme">{{ carte.theme }}</span></span>
+      </span>
+    </li>
+    {% endif %}
+    {% endfor %}
+  </ol>
+</div>
+{% endblock %}
