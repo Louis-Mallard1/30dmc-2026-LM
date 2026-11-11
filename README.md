@@ -12,6 +12,7 @@ Le cahier des charges et les consignes de travail restent sur l'ordinateur de l'
 |---|---|
 | Reconstruire le site après une nouvelle carte | double-clic sur `construire_site.bat` |
 | Voir le site sur mon ordinateur | double-clic sur `voir_site.bat` (ouvre http://localhost:8030/) |
+| Publier en ligne (reconstruit, enregistre et envoie sur GitHub) | double-clic sur `publier_site.bat` |
 
 **Ajouter une carte** : il n'y a rien à toucher dans le site. Il suffit que la carte soit au statut `livrée` dans `../suivi.csv` et que ses exports soient dans `../JNN_slug/export/` (PNG 1080 × 1350, PNG HD 4320 × 5400, PDF). On relance ensuite `construire_site.bat`.
 
@@ -38,6 +39,7 @@ site_web/
 ├─ construire.py           générateur : lit les sources, produit docs/
 ├─ construire_site.bat     double-clic : reconstruit docs/
 ├─ voir_site.bat           double-clic : serveur local + navigateur
+├─ publier_site.bat        double-clic : reconstruit puis publie sur GitHub Pages
 ├─ serveur_local.py        serveur de prévisualisation sans cache (lancé par voir_site.bat)
 ├─ requirements.txt        Jinja2, Pillow, Markdown
 ├─ contenu/                textes des pages À propos et Mentions légales
@@ -99,7 +101,7 @@ Le site n'est **pas encore en ligne**. Le jour venu :
    Cette adresse sert à deux choses : les **aperçus de partage** (LinkedIn, Mastodon…) qui exigent des adresses absolues, et la **page 404**, qui ne peut fonctionner sous un sous-chemin qu'avec elle.
 5. **Remplir les mentions légales** avant d'annoncer le site : l'hébergeur est alors GitHub Inc. (reprendre l'adresse postale à jour indiquée dans les conditions d'utilisation de GitHub).
 
-Après chaque nouvelle carte : `construire_site.bat`, puis `git add .`, `git commit`, `git push`.
+Après chaque nouvelle carte : double-clic sur `publier_site.bat`. Il reconstruit le site, enregistre les changements avec un message daté (« Mise à jour du site : 7 cartes sur 30 (…) ») et les envoie sur GitHub ; le site en ligne suit en une minute environ. S'il n'y a rien de nouveau, il le dit et n'envoie rien.
 
 **Poids** : GitHub recommande de rester sous 1 Go par dépôt. La construction affiche le poids de `docs/` et avertit au-delà de 800 Mo (estimation pour 30 cartes : environ 400 Mo). Chaque nouvelle version d'un PNG HD s'ajoute à l'historique Git : mieux vaut publier les cartes une fois finalisées.
 

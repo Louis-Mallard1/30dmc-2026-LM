@@ -95,7 +95,7 @@ def lire_edition() -> dict:
     chemin = DOSSIER_SITE / "edition.json"
     if not chemin.exists():
         raise ErreurConstruction(f"configuration introuvable : {chemin}")
-    with chemin.open(encoding="utf-8") as f:
+    with chemin.open(encoding="utf-8-sig") as f:
         edition = json.load(f)
     for cle in ("annee", "titre", "sous_titre", "auteur", "defi_url",
                 "racine_projet", "suivi", "themes"):

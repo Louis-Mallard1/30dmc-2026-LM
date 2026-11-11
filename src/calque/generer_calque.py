@@ -61,7 +61,7 @@ def journal(message: str) -> None:
 # --------------------------------------------------------------------------
 
 def chemin_gpkg() -> Path:
-    edition = json.loads((DOSSIER_SITE / "edition.json").read_text(encoding="utf-8"))
+    edition = json.loads((DOSSIER_SITE / "edition.json").read_text(encoding="utf-8-sig"))
     racine = (DOSSIER_SITE / edition["racine_projet"]).resolve()
     chemin = racine / "01_fonds" / "rochefort.gpkg"
     if not chemin.exists():
