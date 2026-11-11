@@ -1,7 +1,7 @@
 {
   "annee": 2026,
   "titre": "Trente cartes de Rochefort",
-  "nb_livrees": 6,
+  "nb_livrees": 7,
   "nb_jours": 30,
   "cartes": [
     {
@@ -346,7 +346,56 @@
       "theme": "10 minute map",
       "consigne": "Une carte faite en 10 minutes maximum",
       "slug": "07-10-minute",
-      "etat": "a_venir"
+      "etat": "livree",
+      "titre": "10 minutes à pied de la place Colbert",
+      "sources": [
+        "© contributeurs OpenStreetMap (ODbL), données extraites le 11/11/2026",
+        "© IGN – BD TOPO®, ADMIN EXPRESS COG – Licence Ouverte Etalab 2.0",
+        "Géoplateforme, données extraites le 08/11/2026"
+      ],
+      "date": "2026-11-11",
+      "page": "carte/07-10-minute/",
+      "images": {
+        "480": {
+          "chemin": "img/07-10-minute_480.webp",
+          "largeur": 480,
+          "hauteur": 600
+        },
+        "960": {
+          "chemin": "img/07-10-minute_960.webp",
+          "largeur": 960,
+          "hauteur": 1200
+        },
+        "1350": {
+          "chemin": "img/07-10-minute_1350.webp",
+          "largeur": 1080,
+          "hauteur": 1350
+        },
+        "hd": {
+          "chemin": "img/07-10-minute_hd.webp",
+          "largeur": 4320,
+          "hauteur": 5400
+        },
+        "partage": {
+          "chemin": "img/07-10-minute_partage.jpg",
+          "largeur": 1200,
+          "hauteur": 630
+        }
+      },
+      "telechargements": {
+        "hd": {
+          "chemin": "telechargements/07-10-minute_HD.png",
+          "octets": 8574225,
+          "format": "PNG",
+          "nom": "30DMC2026_07_10-minute-map_Louis-MALLARD.png"
+        },
+        "pdf": {
+          "chemin": "telechargements/07-10-minute.pdf",
+          "octets": 3679327,
+          "format": "PDF",
+          "nom": "30DMC2026_07_10-minute-map_Louis-MALLARD.pdf"
+        }
+      }
     },
     {
       "jour": "08",
