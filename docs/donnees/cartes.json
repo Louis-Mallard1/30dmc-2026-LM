@@ -1,7 +1,7 @@
 {
   "annee": 2026,
   "titre": "Trente cartes de Rochefort",
-  "nb_livrees": 10,
+  "nb_livrees": 11,
   "nb_jours": 30,
   "cartes": [
     {
@@ -571,7 +571,57 @@
       "theme": "Senses: Sound",
       "consigne": "Un paysage sonore ou du bruit",
       "slug": "11-sound",
-      "etat": "a_venir"
+      "etat": "livree",
+      "titre": "Les halos sonores de Rochefort",
+      "sources": [
+        "© IGN – BD TOPO® – Licence Ouverte Etalab 2.0",
+        "Géoplateforme, données extraites le 08/11/2026",
+        "© contributeurs OpenStreetMap (ODbL), extrait le 18/11/2026",
+        "Modélisation simplifiée inspirée de NoiseModelling (Université Gustave Eiffel – Cerema, GPL-3) et CNOSSOS-EU"
+      ],
+      "date": "2026-11-18",
+      "page": "carte/11-sound/",
+      "images": {
+        "480": {
+          "chemin": "img/11-sound_480.webp",
+          "largeur": 480,
+          "hauteur": 600
+        },
+        "960": {
+          "chemin": "img/11-sound_960.webp",
+          "largeur": 960,
+          "hauteur": 1200
+        },
+        "1350": {
+          "chemin": "img/11-sound_1350.webp",
+          "largeur": 1080,
+          "hauteur": 1350
+        },
+        "hd": {
+          "chemin": "img/11-sound_hd.webp",
+          "largeur": 4320,
+          "hauteur": 5400
+        },
+        "partage": {
+          "chemin": "img/11-sound_partage.jpg",
+          "largeur": 1200,
+          "hauteur": 630
+        }
+      },
+      "telechargements": {
+        "hd": {
+          "chemin": "telechargements/11-sound_HD.png",
+          "octets": 9540840,
+          "format": "PNG",
+          "nom": "30DMC2026_11_Senses-Sound_Louis-MALLARD.png"
+        },
+        "pdf": {
+          "chemin": "telechargements/11-sound.pdf",
+          "octets": 3277741,
+          "format": "PDF",
+          "nom": "30DMC2026_11_Senses-Sound_Louis-MALLARD.pdf"
+        }
+      }
     },
     {
       "jour": "12",
