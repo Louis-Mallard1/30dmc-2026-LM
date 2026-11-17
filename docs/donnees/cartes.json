@@ -1,7 +1,7 @@
 {
   "annee": 2026,
   "titre": "Trente cartes de Rochefort",
-  "nb_livrees": 7,
+  "nb_livrees": 10,
   "nb_jours": 30,
   "cartes": [
     {
@@ -402,21 +402,169 @@
       "theme": "Utopia",
       "consigne": "Quelque chose qui pourrait exister",
       "slug": "08-utopia",
-      "etat": "a_venir"
+      "etat": "livree",
+      "titre": "Rochefort 2166, la cité-anneau",
+      "sources": [
+        "© IGN – BD TOPO®, IRIS GE – Licence Ouverte Etalab 2.0",
+        "Géoplateforme, données extraites le 08/11/2026 et le 17/11/2026",
+        "© contributeurs OpenStreetMap (ODbL), données extraites le 17/11/2026"
+      ],
+      "date": "2026-11-17",
+      "page": "carte/08-utopia/",
+      "images": {
+        "480": {
+          "chemin": "img/08-utopia_480.webp",
+          "largeur": 480,
+          "hauteur": 600
+        },
+        "960": {
+          "chemin": "img/08-utopia_960.webp",
+          "largeur": 960,
+          "hauteur": 1200
+        },
+        "1350": {
+          "chemin": "img/08-utopia_1350.webp",
+          "largeur": 1080,
+          "hauteur": 1350
+        },
+        "hd": {
+          "chemin": "img/08-utopia_hd.webp",
+          "largeur": 4320,
+          "hauteur": 5400
+        },
+        "partage": {
+          "chemin": "img/08-utopia_partage.jpg",
+          "largeur": 1200,
+          "hauteur": 630
+        }
+      },
+      "telechargements": {
+        "hd": {
+          "chemin": "telechargements/08-utopia_HD.png",
+          "octets": 9870294,
+          "format": "PNG",
+          "nom": "30DMC2026_08_Utopia_Louis-MALLARD.png"
+        },
+        "pdf": {
+          "chemin": "telechargements/08-utopia.pdf",
+          "octets": 2252202,
+          "format": "PDF",
+          "nom": "30DMC2026_08_Utopia_Louis-MALLARD.pdf"
+        }
+      }
     },
     {
       "jour": "09",
       "theme": "Urban-rural",
       "consigne": "Ville et campagne",
       "slug": "09-urban-rural",
-      "etat": "a_venir"
+      "etat": "livree",
+      "titre": "Le sandwich urbain-rural de Rochefort",
+      "sources": [
+        "© IGN – BD TOPO®, ADMIN EXPRESS COG – Licence Ouverte Etalab 2.0",
+        "Géoplateforme, données extraites le 08/11/2026",
+        "IGN – RPG 2025 (Licence Ouverte Etalab 2.0)",
+        "© contributeurs OpenStreetMap (ODbL), extrait le 17/11/2026",
+        "Insee – populations légales 2023 via ADMIN EXPRESS COG (Licence Ouverte Etalab 2.0)"
+      ],
+      "date": "2026-11-17",
+      "page": "carte/09-urban-rural/",
+      "images": {
+        "480": {
+          "chemin": "img/09-urban-rural_480.webp",
+          "largeur": 480,
+          "hauteur": 600
+        },
+        "960": {
+          "chemin": "img/09-urban-rural_960.webp",
+          "largeur": 960,
+          "hauteur": 1200
+        },
+        "1350": {
+          "chemin": "img/09-urban-rural_1350.webp",
+          "largeur": 1080,
+          "hauteur": 1350
+        },
+        "hd": {
+          "chemin": "img/09-urban-rural_hd.webp",
+          "largeur": 4320,
+          "hauteur": 5400
+        },
+        "partage": {
+          "chemin": "img/09-urban-rural_partage.jpg",
+          "largeur": 1200,
+          "hauteur": 630
+        }
+      },
+      "telechargements": {
+        "hd": {
+          "chemin": "telechargements/09-urban-rural_HD.png",
+          "octets": 4369680,
+          "format": "PNG",
+          "nom": "30DMC2026_09_Urban-rural_Louis-MALLARD.png"
+        },
+        "pdf": {
+          "chemin": "telechargements/09-urban-rural.pdf",
+          "octets": 1392972,
+          "format": "PDF",
+          "nom": "30DMC2026_09_Urban-rural_Louis-MALLARD.pdf"
+        }
+      }
     },
     {
       "jour": "10",
       "theme": "Prompting only",
       "consigne": "Une carte faite uniquement par une IA ou en ligne de commande",
       "slug": "10-prompting",
-      "etat": "a_venir"
+      "etat": "livree",
+      "titre": "Rochefort, ville tirée au cordeau",
+      "sources": [
+        "© IGN – BD TOPO®, ADMIN EXPRESS COG – Licence Ouverte Etalab 2.0",
+        "Géoplateforme, données extraites le 08/11/2026"
+      ],
+      "date": "2026-11-17",
+      "page": "carte/10-prompting/",
+      "images": {
+        "480": {
+          "chemin": "img/10-prompting_480.webp",
+          "largeur": 480,
+          "hauteur": 600
+        },
+        "960": {
+          "chemin": "img/10-prompting_960.webp",
+          "largeur": 960,
+          "hauteur": 1200
+        },
+        "1350": {
+          "chemin": "img/10-prompting_1350.webp",
+          "largeur": 1080,
+          "hauteur": 1350
+        },
+        "hd": {
+          "chemin": "img/10-prompting_hd.webp",
+          "largeur": 4320,
+          "hauteur": 5400
+        },
+        "partage": {
+          "chemin": "img/10-prompting_partage.jpg",
+          "largeur": 1200,
+          "hauteur": 630
+        }
+      },
+      "telechargements": {
+        "hd": {
+          "chemin": "telechargements/10-prompting_HD.png",
+          "octets": 6945174,
+          "format": "PNG",
+          "nom": "30DMC2026_10_Prompting-only_Louis-MALLARD.png"
+        },
+        "pdf": {
+          "chemin": "telechargements/10-prompting.pdf",
+          "octets": 2032084,
+          "format": "PDF",
+          "nom": "30DMC2026_10_Prompting-only_Louis-MALLARD.pdf"
+        }
+      }
     },
     {
       "jour": "11",
