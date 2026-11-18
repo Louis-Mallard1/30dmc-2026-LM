@@ -1,7 +1,7 @@
 {
   "annee": 2026,
   "titre": "Trente cartes de Rochefort",
-  "nb_livrees": 11,
+  "nb_livrees": 13,
   "nb_jours": 30,
   "cartes": [
     {
@@ -628,14 +628,117 @@
       "theme": "Power",
       "consigne": "Le pouvoir au sens large : énergie, réseaux, force, influence",
       "slug": "12-power",
-      "etat": "a_venir"
+      "etat": "livree",
+      "titre": "RÉSEAU ÉLECTRIQUE DE ROCHEFORT : DE LA SOURCE AU COMPTEUR",
+      "sources": [
+        "© Enedis, Open Data Enedis, Licence Ouverte Etalab 2.0, extraction 18/11/2026",
+        "© contributeurs OpenStreetMap (ODbL), extraction 18/11/2026",
+        "RTE – ODRE, lignes et postes électriques, Licence Ouverte v2.0",
+        "RTE – ODRE, Registre national des installations de production au 31/12/2025, Licence Ouverte v2.0",
+        "© IGN – BD TOPO®, ADMIN EXPRESS COG (Géoplateforme, extraction 08/11/2026) – Licence Ouverte Etalab 2.0"
+      ],
+      "date": "2026-11-18",
+      "page": "carte/12-power/",
+      "images": {
+        "480": {
+          "chemin": "img/12-power_480.webp",
+          "largeur": 480,
+          "hauteur": 600
+        },
+        "960": {
+          "chemin": "img/12-power_960.webp",
+          "largeur": 960,
+          "hauteur": 1200
+        },
+        "1350": {
+          "chemin": "img/12-power_1350.webp",
+          "largeur": 1080,
+          "hauteur": 1350
+        },
+        "hd": {
+          "chemin": "img/12-power_hd.webp",
+          "largeur": 4320,
+          "hauteur": 5400
+        },
+        "partage": {
+          "chemin": "img/12-power_partage.jpg",
+          "largeur": 1200,
+          "hauteur": 630
+        }
+      },
+      "telechargements": {
+        "hd": {
+          "chemin": "telechargements/12-power_HD.png",
+          "octets": 5081611,
+          "format": "PNG",
+          "nom": "30DMC2026_12_Power_Louis-MALLARD.png"
+        },
+        "pdf": {
+          "chemin": "telechargements/12-power.pdf",
+          "octets": 2764541,
+          "format": "PDF",
+          "nom": "30DMC2026_12_Power_Louis-MALLARD.pdf"
+        }
+      }
     },
     {
       "jour": "13",
       "theme": "Interactions",
       "consigne": "Des interactions, éventuellement une carte interactive",
       "slug": "13-interactions",
-      "etat": "a_venir"
+      "etat": "livree",
+      "titre": "Une nuit au Stereoparc, point par point",
+      "sources": [
+        "© IGN – BD TOPO®, ADMIN EXPRESS COG – Licence Ouverte Etalab 2.0",
+        "Géoplateforme, données extraites le 08/11/2026",
+        "© contributeurs OpenStreetMap (ODbL)",
+        "Implantation d'après le plan du site Stereoparc 2026 (stereoparc.com)",
+        "Fréquentation : anecdotes.fr (28/07/2026), stereoparc.com ; programmation : festivalenfrance.com, infoconcert.com",
+        "Répartition des personnes : simulation de l'auteur"
+      ],
+      "date": "2026-11-18",
+      "page": "carte/13-interactions/",
+      "images": {
+        "480": {
+          "chemin": "img/13-interactions_480.webp",
+          "largeur": 480,
+          "hauteur": 600
+        },
+        "960": {
+          "chemin": "img/13-interactions_960.webp",
+          "largeur": 960,
+          "hauteur": 1200
+        },
+        "1350": {
+          "chemin": "img/13-interactions_1350.webp",
+          "largeur": 1080,
+          "hauteur": 1350
+        },
+        "hd": {
+          "chemin": "img/13-interactions_hd.webp",
+          "largeur": 4320,
+          "hauteur": 5400
+        },
+        "partage": {
+          "chemin": "img/13-interactions_partage.jpg",
+          "largeur": 1200,
+          "hauteur": 630
+        }
+      },
+      "telechargements": {
+        "hd": {
+          "chemin": "telechargements/13-interactions_HD.png",
+          "octets": 4088506,
+          "format": "PNG",
+          "nom": "30DMC2026_13_Interactions_Louis-MALLARD.png"
+        },
+        "pdf": {
+          "chemin": "telechargements/13-interactions.pdf",
+          "octets": 2499143,
+          "format": "PDF",
+          "nom": "30DMC2026_13_Interactions_Louis-MALLARD.pdf"
+        }
+      }
     },
     {
       "jour": "14",
