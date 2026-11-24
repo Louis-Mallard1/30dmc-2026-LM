@@ -1,7 +1,7 @@
 {
   "annee": 2026,
   "titre": "Trente cartes de Rochefort",
-  "nb_livrees": 15,
+  "nb_livrees": 16,
   "nb_jours": 30,
   "cartes": [
     {
@@ -857,7 +857,57 @@
       "theme": "Collaborative map",
       "consigne": "Une carte faite à plusieurs",
       "slug": "16-collaborative",
-      "etat": "a_venir"
+      "etat": "livree",
+      "titre": "Rochefort à quatre mains",
+      "sources": [
+        "© IGN – BD TOPO®, RGE ALTI",
+        "Licence Ouverte Etalab 2.0",
+        "Géoplateforme, extractions",
+        "des 08/11/2026 et 24/11/2026"
+      ],
+      "date": "2026-11-24",
+      "page": "carte/16-collaborative/",
+      "images": {
+        "480": {
+          "chemin": "img/16-collaborative_480.webp",
+          "largeur": 480,
+          "hauteur": 600
+        },
+        "960": {
+          "chemin": "img/16-collaborative_960.webp",
+          "largeur": 960,
+          "hauteur": 1200
+        },
+        "1350": {
+          "chemin": "img/16-collaborative_1350.webp",
+          "largeur": 1080,
+          "hauteur": 1350
+        },
+        "hd": {
+          "chemin": "img/16-collaborative_hd.webp",
+          "largeur": 4320,
+          "hauteur": 5400
+        },
+        "partage": {
+          "chemin": "img/16-collaborative_partage.jpg",
+          "largeur": 1200,
+          "hauteur": 630
+        }
+      },
+      "telechargements": {
+        "hd": {
+          "chemin": "telechargements/16-collaborative_HD.png",
+          "octets": 14219728,
+          "format": "PNG",
+          "nom": "30DMC2026_16_Collaborative-map_Louis-MALLARD.png"
+        },
+        "pdf": {
+          "chemin": "telechargements/16-collaborative.pdf",
+          "octets": 3081311,
+          "format": "PDF",
+          "nom": "30DMC2026_16_Collaborative-map_Louis-MALLARD.pdf"
+        }
+      }
     },
     {
       "jour": "17",
