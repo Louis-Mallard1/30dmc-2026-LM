@@ -1,7 +1,7 @@
 {
   "annee": 2026,
   "titre": "Trente cartes de Rochefort",
-  "nb_livrees": 13,
+  "nb_livrees": 15,
   "nb_jours": 30,
   "cartes": [
     {
@@ -745,14 +745,112 @@
       "theme": "Borgesian map",
       "consigne": "Une carte si détaillée qu'elle devient le territoire",
       "slug": "14-borgesian",
-      "etat": "a_venir"
+      "etat": "livree",
+      "titre": "Plan coté du poste de saisie, 1:1",
+      "sources": [
+        "Dimensions souris : Logitech G, fiche technique PRO Wireless (125 × 63,5 × 40 mm), données constructeur citées",
+        "Dimensions clavier : RK Royal Kludge, fiche produit M75 (≈ 328 × 138 × 42 mm), données constructeur citées",
+        "Relevé du poste : photographie et tracé QGIS © Louis MALLARD (24/11/2026)"
+      ],
+      "date": "2026-11-24",
+      "page": "carte/14-borgesian/",
+      "images": {
+        "480": {
+          "chemin": "img/14-borgesian_480.webp",
+          "largeur": 480,
+          "hauteur": 600
+        },
+        "960": {
+          "chemin": "img/14-borgesian_960.webp",
+          "largeur": 960,
+          "hauteur": 1200
+        },
+        "1350": {
+          "chemin": "img/14-borgesian_1350.webp",
+          "largeur": 1080,
+          "hauteur": 1350
+        },
+        "hd": {
+          "chemin": "img/14-borgesian_hd.webp",
+          "largeur": 4320,
+          "hauteur": 5400
+        },
+        "partage": {
+          "chemin": "img/14-borgesian_partage.jpg",
+          "largeur": 1200,
+          "hauteur": 630
+        }
+      },
+      "telechargements": {
+        "hd": {
+          "chemin": "telechargements/14-borgesian_HD.png",
+          "octets": 2065208,
+          "format": "PNG",
+          "nom": "30DMC2026_14_Borgesian-map_Louis-MALLARD.png"
+        },
+        "pdf": {
+          "chemin": "telechargements/14-borgesian.pdf",
+          "octets": 2071825,
+          "format": "PDF",
+          "nom": "30DMC2026_14_Borgesian-map_Louis-MALLARD.pdf"
+        }
+      }
     },
     {
       "jour": "15",
       "theme": "Inside out",
       "consigne": "Quelque chose de volontairement faux ou retourné",
       "slug": "15-inside-out",
-      "etat": "a_venir"
+      "etat": "livree",
+      "titre": "Rochefort, la tête en bas",
+      "sources": [
+        "© IGN – BD TOPO®, ADMIN EXPRESS COG – Licence Ouverte Etalab 2.0",
+        "Géoplateforme, données extraites les 08 et 10/11/2026",
+        "Natural Earth (domaine public)"
+      ],
+      "date": "2026-11-24",
+      "page": "carte/15-inside-out/",
+      "images": {
+        "480": {
+          "chemin": "img/15-inside-out_480.webp",
+          "largeur": 480,
+          "hauteur": 600
+        },
+        "960": {
+          "chemin": "img/15-inside-out_960.webp",
+          "largeur": 960,
+          "hauteur": 1200
+        },
+        "1350": {
+          "chemin": "img/15-inside-out_1350.webp",
+          "largeur": 1080,
+          "hauteur": 1350
+        },
+        "hd": {
+          "chemin": "img/15-inside-out_hd.webp",
+          "largeur": 4320,
+          "hauteur": 5400
+        },
+        "partage": {
+          "chemin": "img/15-inside-out_partage.jpg",
+          "largeur": 1200,
+          "hauteur": 630
+        }
+      },
+      "telechargements": {
+        "hd": {
+          "chemin": "telechargements/15-inside-out_HD.png",
+          "octets": 5203910,
+          "format": "PNG",
+          "nom": "30DMC2026_15_Inside-out_Louis-MALLARD.png"
+        },
+        "pdf": {
+          "chemin": "telechargements/15-inside-out.pdf",
+          "octets": 3204981,
+          "format": "PDF",
+          "nom": "30DMC2026_15_Inside-out_Louis-MALLARD.pdf"
+        }
+      }
     },
     {
       "jour": "16",
