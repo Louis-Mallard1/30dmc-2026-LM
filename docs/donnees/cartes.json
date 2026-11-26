@@ -1,7 +1,7 @@
 {
   "annee": 2026,
   "titre": "Trente cartes de Rochefort",
-  "nb_livrees": 16,
+  "nb_livrees": 20,
   "nb_jours": 30,
   "cartes": [
     {
@@ -914,28 +914,227 @@
       "theme": "Light & dark",
       "consigne": "Seulement la lumière et l'ombre",
       "slug": "17-light-dark",
-      "etat": "a_venir"
+      "etat": "livree",
+      "titre": "L'ombre du Transbordeur",
+      "sources": [
+        "© IGN – BD TOPO®, ADMIN EXPRESS COG – Licence Ouverte Etalab 2.0",
+        "Géoplateforme, données extraites le 08/11/2026 et le 25/11/2026",
+        "Dimensions du pont : Structurae, Wikipédia",
+        "Position du Soleil : formules NOAA, contrôle pvlib"
+      ],
+      "date": "2026-11-25",
+      "page": "carte/17-light-dark/",
+      "images": {
+        "480": {
+          "chemin": "img/17-light-dark_480.webp",
+          "largeur": 480,
+          "hauteur": 600
+        },
+        "960": {
+          "chemin": "img/17-light-dark_960.webp",
+          "largeur": 960,
+          "hauteur": 1200
+        },
+        "1350": {
+          "chemin": "img/17-light-dark_1350.webp",
+          "largeur": 1080,
+          "hauteur": 1350
+        },
+        "hd": {
+          "chemin": "img/17-light-dark_hd.webp",
+          "largeur": 4320,
+          "hauteur": 5400
+        },
+        "partage": {
+          "chemin": "img/17-light-dark_partage.jpg",
+          "largeur": 1200,
+          "hauteur": 630
+        }
+      },
+      "telechargements": {
+        "hd": {
+          "chemin": "telechargements/17-light-dark_HD.png",
+          "octets": 3262768,
+          "format": "PNG",
+          "nom": "30DMC2026_17_Light-dark_Louis-MALLARD.png"
+        },
+        "pdf": {
+          "chemin": "telechargements/17-light-dark.pdf",
+          "octets": 1103369,
+          "format": "PDF",
+          "nom": "30DMC2026_17_Light-dark_Louis-MALLARD.pdf"
+        }
+      }
     },
     {
       "jour": "18",
       "theme": "NULL",
       "consigne": "Pas de consigne",
       "slug": "18-null",
-      "etat": "a_venir"
+      "etat": "livree",
+      "titre": "Rochefort IS NULL",
+      "sources": [
+        "© IGN – BD TOPO®, ADMIN EXPRESS COG – Licence Ouverte Etalab 2.0",
+        "Géoplateforme, données extraites le 08/11/2026"
+      ],
+      "date": "2026-11-25",
+      "page": "carte/18-null/",
+      "images": {
+        "480": {
+          "chemin": "img/18-null_480.webp",
+          "largeur": 480,
+          "hauteur": 600
+        },
+        "960": {
+          "chemin": "img/18-null_960.webp",
+          "largeur": 960,
+          "hauteur": 1200
+        },
+        "1350": {
+          "chemin": "img/18-null_1350.webp",
+          "largeur": 1080,
+          "hauteur": 1350
+        },
+        "hd": {
+          "chemin": "img/18-null_hd.webp",
+          "largeur": 4320,
+          "hauteur": 5400
+        },
+        "partage": {
+          "chemin": "img/18-null_partage.jpg",
+          "largeur": 1200,
+          "hauteur": 630
+        }
+      },
+      "telechargements": {
+        "hd": {
+          "chemin": "telechargements/18-null_HD.png",
+          "octets": 4771791,
+          "format": "PNG",
+          "nom": "30DMC2026_18_NULL_Louis-MALLARD.png"
+        },
+        "pdf": {
+          "chemin": "telechargements/18-null.pdf",
+          "octets": 2875849,
+          "format": "PDF",
+          "nom": "30DMC2026_18_NULL_Louis-MALLARD.pdf"
+        }
+      }
     },
     {
       "jour": "19",
       "theme": "Senses: Smell",
       "consigne": "Ce qui se sent",
       "slug": "19-smell",
-      "etat": "a_venir"
+      "etat": "livree",
+      "titre": "Midi à Rochefort, le nez au vent",
+      "sources": [
+        "© contributeurs OpenStreetMap, ODbL (extraction Overpass du 25/11/2026)",
+        "Bâti et voirie : © IGN – BD TOPO® – Licence Ouverte Etalab 2.0",
+        "Géoplateforme, données extraites le 08/11/2026",
+        "Marché : office de tourisme Rochefort Océan",
+        "Inspiration : Kate McLean, sensorymaps.com"
+      ],
+      "date": "2026-11-26",
+      "page": "carte/19-smell/",
+      "images": {
+        "480": {
+          "chemin": "img/19-smell_480.webp",
+          "largeur": 480,
+          "hauteur": 600
+        },
+        "960": {
+          "chemin": "img/19-smell_960.webp",
+          "largeur": 960,
+          "hauteur": 1200
+        },
+        "1350": {
+          "chemin": "img/19-smell_1350.webp",
+          "largeur": 1080,
+          "hauteur": 1350
+        },
+        "hd": {
+          "chemin": "img/19-smell_hd.webp",
+          "largeur": 4320,
+          "hauteur": 5400
+        },
+        "partage": {
+          "chemin": "img/19-smell_partage.jpg",
+          "largeur": 1200,
+          "hauteur": 630
+        }
+      },
+      "telechargements": {
+        "hd": {
+          "chemin": "telechargements/19-smell_HD.png",
+          "octets": 5690816,
+          "format": "PNG",
+          "nom": "30DMC2026_19_Senses-Smell_Louis-MALLARD.png"
+        },
+        "pdf": {
+          "chemin": "telechargements/19-smell.pdf",
+          "octets": 2169382,
+          "format": "PDF",
+          "nom": "30DMC2026_19_Senses-Smell_Louis-MALLARD.pdf"
+        }
+      }
     },
     {
       "jour": "20",
       "theme": "Hexagons",
       "consigne": "Des grilles hexagonales",
       "slug": "20-hexagons",
-      "etat": "a_venir"
+      "etat": "livree",
+      "titre": "Rochefort, au cœur de l'Hexagone",
+      "sources": [
+        "© IGN – BD TOPO, Géoplateforme – Licence Ouverte Etalab 2.0",
+        "© contributeurs OpenStreetMap (ODbL)",
+        "Natural Earth (domaine public)",
+        "Faits : POP – base Mérimée (ministère de la Culture), musée national de la Marine, Fondation Napoléon, Universalis, Rochefort Océan"
+      ],
+      "date": "2026-11-26",
+      "page": "carte/20-hexagons/",
+      "images": {
+        "480": {
+          "chemin": "img/20-hexagons_480.webp",
+          "largeur": 480,
+          "hauteur": 600
+        },
+        "960": {
+          "chemin": "img/20-hexagons_960.webp",
+          "largeur": 960,
+          "hauteur": 1200
+        },
+        "1350": {
+          "chemin": "img/20-hexagons_1350.webp",
+          "largeur": 1080,
+          "hauteur": 1350
+        },
+        "hd": {
+          "chemin": "img/20-hexagons_hd.webp",
+          "largeur": 4320,
+          "hauteur": 5400
+        },
+        "partage": {
+          "chemin": "img/20-hexagons_partage.jpg",
+          "largeur": 1200,
+          "hauteur": 630
+        }
+      },
+      "telechargements": {
+        "hd": {
+          "chemin": "telechargements/20-hexagons_HD.png",
+          "octets": 2955835,
+          "format": "PNG",
+          "nom": "30DMC2026_20_Hexagons_Louis-MALLARD.png"
+        },
+        "pdf": {
+          "chemin": "telechargements/20-hexagons.pdf",
+          "octets": 1684319,
+          "format": "PDF",
+          "nom": "30DMC2026_20_Hexagons_Louis-MALLARD.pdf"
+        }
+      }
     },
     {
       "jour": "21",
