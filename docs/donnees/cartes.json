@@ -1,7 +1,7 @@
 {
   "annee": 2026,
   "titre": "Trente cartes de Rochefort",
-  "nb_livrees": 21,
+  "nb_livrees": 22,
   "nb_jours": 30,
   "cartes": [
     {
@@ -1197,7 +1197,56 @@
       "theme": "Projections",
       "consigne": "Mettre le globe à plat, choisir sa projection préférée",
       "slug": "22-projections",
-      "etat": "a_venir"
+      "etat": "livree",
+      "titre": "ROCHEFORT-SUR-MER",
+      "sources": [
+        "© IGN – RGE ALTI – Licence Ouverte Etalab 2.0",
+        "© IGN – BD TOPO®, ADMIN EXPRESS COG – Licence Ouverte Etalab 2.0",
+        "Géoplateforme, données extraites le 08/11/2026 (BD TOPO) et le 26/11/2026 (RGE ALTI)"
+      ],
+      "date": "2026-11-26",
+      "page": "carte/22-projections/",
+      "images": {
+        "480": {
+          "chemin": "img/22-projections_480.webp",
+          "largeur": 480,
+          "hauteur": 600
+        },
+        "960": {
+          "chemin": "img/22-projections_960.webp",
+          "largeur": 960,
+          "hauteur": 1200
+        },
+        "1350": {
+          "chemin": "img/22-projections_1350.webp",
+          "largeur": 1080,
+          "hauteur": 1350
+        },
+        "hd": {
+          "chemin": "img/22-projections_hd.webp",
+          "largeur": 4320,
+          "hauteur": 5400
+        },
+        "partage": {
+          "chemin": "img/22-projections_partage.jpg",
+          "largeur": 1200,
+          "hauteur": 630
+        }
+      },
+      "telechargements": {
+        "hd": {
+          "chemin": "telechargements/22-projections_HD.png",
+          "octets": 31862004,
+          "format": "PNG",
+          "nom": "30DMC2026_22_Projections_Louis-MALLARD.png"
+        },
+        "pdf": {
+          "chemin": "telechargements/22-projections.pdf",
+          "octets": 13198283,
+          "format": "PDF",
+          "nom": "30DMC2026_22_Projections_Louis-MALLARD.pdf"
+        }
+      }
     },
     {
       "jour": "23",
