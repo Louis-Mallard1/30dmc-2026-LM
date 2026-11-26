@@ -1,7 +1,7 @@
 {
   "annee": 2026,
   "titre": "Trente cartes de Rochefort",
-  "nb_livrees": 20,
+  "nb_livrees": 21,
   "nb_jours": 30,
   "cartes": [
     {
@@ -1141,7 +1141,56 @@
       "theme": "OpenStreetMap",
       "consigne": "Des données OSM, ou des contributions à OSM",
       "slug": "21-openstreetmap",
-      "etat": "a_venir"
+      "etat": "livree",
+      "titre": "Le recensement que personne n'a demandé",
+      "sources": [
+        "© contributeurs OpenStreetMap, ODbL — extraction Overpass du 26/11/2026",
+        "© IGN – BD TOPO®, Licence Ouverte Etalab 2.0 — Géoplateforme, extrait le 08/11/2026",
+        "Insee, populations légales 2023 — Licence Ouverte Etalab 2.0"
+      ],
+      "date": "2026-11-26",
+      "page": "carte/21-openstreetmap/",
+      "images": {
+        "480": {
+          "chemin": "img/21-openstreetmap_480.webp",
+          "largeur": 480,
+          "hauteur": 600
+        },
+        "960": {
+          "chemin": "img/21-openstreetmap_960.webp",
+          "largeur": 960,
+          "hauteur": 1200
+        },
+        "1350": {
+          "chemin": "img/21-openstreetmap_1350.webp",
+          "largeur": 1080,
+          "hauteur": 1350
+        },
+        "hd": {
+          "chemin": "img/21-openstreetmap_hd.webp",
+          "largeur": 4320,
+          "hauteur": 5400
+        },
+        "partage": {
+          "chemin": "img/21-openstreetmap_partage.jpg",
+          "largeur": 1200,
+          "hauteur": 630
+        }
+      },
+      "telechargements": {
+        "hd": {
+          "chemin": "telechargements/21-openstreetmap_HD.png",
+          "octets": 2708145,
+          "format": "PNG",
+          "nom": "30DMC2026_21_OpenStreetMap_Louis-MALLARD.png"
+        },
+        "pdf": {
+          "chemin": "telechargements/21-openstreetmap.pdf",
+          "octets": 2067082,
+          "format": "PDF",
+          "nom": "30DMC2026_21_OpenStreetMap_Louis-MALLARD.pdf"
+        }
+      }
     },
     {
       "jour": "22",
