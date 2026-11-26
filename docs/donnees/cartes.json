@@ -1,7 +1,7 @@
 {
   "annee": 2026,
   "titre": "Trente cartes de Rochefort",
-  "nb_livrees": 22,
+  "nb_livrees": 23,
   "nb_jours": 30,
   "cartes": [
     {
@@ -1253,7 +1253,55 @@
       "theme": "Senses: Taste",
       "consigne": "Ce qui se goûte",
       "slug": "23-taste",
-      "etat": "a_venir"
+      "etat": "livree",
+      "titre": "Le grand tour des tables",
+      "sources": [
+        "© contributeurs OpenStreetMap, ODbL — extraction Overpass du 26/11/2026",
+        "© IGN – BD TOPO®, Licence Ouverte Etalab 2.0 — Géoplateforme, extrait le 08/11/2026"
+      ],
+      "date": "2026-11-26",
+      "page": "carte/23-taste/",
+      "images": {
+        "480": {
+          "chemin": "img/23-taste_480.webp",
+          "largeur": 480,
+          "hauteur": 600
+        },
+        "960": {
+          "chemin": "img/23-taste_960.webp",
+          "largeur": 960,
+          "hauteur": 1200
+        },
+        "1350": {
+          "chemin": "img/23-taste_1350.webp",
+          "largeur": 1080,
+          "hauteur": 1350
+        },
+        "hd": {
+          "chemin": "img/23-taste_hd.webp",
+          "largeur": 4320,
+          "hauteur": 5400
+        },
+        "partage": {
+          "chemin": "img/23-taste_partage.jpg",
+          "largeur": 1200,
+          "hauteur": 630
+        }
+      },
+      "telechargements": {
+        "hd": {
+          "chemin": "telechargements/23-taste_HD.png",
+          "octets": 4755800,
+          "format": "PNG",
+          "nom": "30DMC2026_23_Senses-Taste_Louis-MALLARD.png"
+        },
+        "pdf": {
+          "chemin": "telechargements/23-taste.pdf",
+          "octets": 2076008,
+          "format": "PDF",
+          "nom": "30DMC2026_23_Senses-Taste_Louis-MALLARD.pdf"
+        }
+      }
     },
     {
       "jour": "24",
